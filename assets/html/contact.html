@@ -1,0 +1,248 @@
+<section class="contact-page">
+    <div class="container">
+        <!-- Header -->
+        <div class="contact-header">
+            <h1 class="section-title">Contact Us</h1>
+            <p class="section-subtitle">Get in touch with JPCS. We're here to help you connect, collaborate, and create.</p>
+        </div>
+
+        <!-- Contact Cards -->
+        <div class="contact-cards">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p>For general inquiries and membership questions</p>
+                <a href="mailto:contact@jpcs.org" class="contact-link">contact@jpcs.org</a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>Call Us</h3>
+                <p>For urgent matters and event inquiries</p>
+                <a href="tel:+639123456789" class="contact-link">+63 912 345 6789</a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Visit Us</h3>
+                <p>Computer Science Department</p>
+                <span class="contact-link">University Campus, Metro Manila</span>
+            </div>
+        </div>
+
+        <!-- Contact Form & Info -->
+        <div class="contact-main">
+            <div class="contact-form-section">
+                <h2 class="section-subsection">Send us a Message</h2>
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                            <div class="error-message"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-subject">Subject *</label>
+                        <select id="contact-subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="membership">Membership Inquiry</option>
+                            <option value="events">Event Information</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="feedback">Feedback/Suggestions</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group" id="other-subject-group" style="display: none;">
+                        <label for="other-subject">Other Subject</label>
+                        <input type="text" id="other-subject" name="other_subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-message">Message *</label>
+                        <textarea id="contact-message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                        <div class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-urgency">Urgency Level</label>
+                        <div class="urgency-levels">
+                            <label>
+                                <input type="radio" name="urgency" value="low" checked>
+                                <span class="urgency-label low">Low</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="urgency" value="medium">
+                                <span class="urgency-label medium">Medium</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="urgency" value="high">
+                                <span class="urgency-label high">High</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="contact-newsletter" name="newsletter" checked>
+                        <label for="contact-newsletter">Subscribe to our newsletter for updates</label>
+                    </div>
+                    
+                    <button type="submit" class="btn submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+            
+            <div class="contact-info-section">
+                <h2 class="section-subsection">Get in Touch</h2>
+                
+                <div class="info-card">
+                    <h3>Office Hours</h3>
+                    <div class="office-hours">
+                        <div class="day-time">
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">9:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="day-time">
+                            <span class="day">Saturday</span>
+                            <span class="time">10:00 AM - 2:00 PM</span>
+                        </div>
+                        <div class="day-time">
+                            <span class="day">Sunday</span>
+                            <span class="time">Closed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Social Media</h3>
+                    <div class="social-media-links">
+                        <a href="#" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-link linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-link discord">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Quick Links</h3>
+                    <div class="quick-links">
+                        <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+                        <a href="#events"><i class="fas fa-calendar-alt"></i> Event Calendar</a>
+                        <a href="#membership"><i class="fas fa-user-plus"></i> Join JPCS</a>
+                        <a href="#resources"><i class="fas fa-book"></i> Resources</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="contact-faq-section">
+            <h2 class="section-subsection">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How long does it take to get a response?</h4>
+                    <p>We typically respond within 24-48 hours during office hours. Urgent matters are prioritized.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I schedule a meeting with JPCS officers?</h4>
+                    <p>Yes! Please mention your request in the message, and we'll coordinate a suitable time.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer internships or job placements?</h4>
+                    <p>While we don't directly place students, we partner with companies and share opportunities through our network.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How can I sponsor or partner with JPCS?</h4>
+                    <p>We welcome partnerships! Select "Partnership Opportunity" in the contact form or email partnerships@jpcs.org.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Are there volunteer opportunities?</h4>
+                    <p>Yes! We're always looking for passionate volunteers. Contact us or attend our next general assembly.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can alumni join JPCS?</h4>
+                    <p>Absolutely! Alumni can join as mentors, speakers, or supporting members. Contact us for alumni options.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-section">
+            <h2 class="section-subsection">Find Us</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>University Campus Location</h3>
+                    <p>Computer Science Building, Room 305</p>
+                    <p>University of Technology Campus</p>
+                    <p>Metro Manila, Philippines</p>
+                    <button class="btn btn-outline" id="get-directions">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </button>
+                </div>
+                <div class="location-details">
+                    <h4>Getting Here</h4>
+                    <div class="transport-options">
+                        <div class="transport-option">
+                            <i class="fas fa-subway"></i>
+                            <div>
+                                <strong>By MRT/LRT:</strong>
+                                <p>Get off at University Station, take Exit 3.</p>
+                            </div>
+                        </div>
+                        <div class="transport-option">
+                            <i class="fas fa-bus"></i>
+                            <div>
+                                <strong>By Bus:</strong>
+                                <p>University Loop buses stop at the main gate.</p>
+                            </div>
+                        </div>
+                        <div class="transport-option">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <strong>By Car:</strong>
+                                <p>Parking available at Building C parking lot.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

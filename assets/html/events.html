@@ -1,0 +1,160 @@
+<section class="events-page">
+    <div class="container">
+        <!-- Header -->
+        <div class="events-header">
+            <h1 class="section-title">Events & Activities</h1>
+            <p class="section-subtitle">Stay updated with our latest workshops, hackathons, and networking events</p>
+        </div>
+
+        <!-- Event Filters -->
+        <div class="events-controls">
+            <div class="filter-section">
+                <h3>Filter Events</h3>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label for="category-filter">Category:</label>
+                        <select id="category-filter" class="filter-select">
+                            <option value="all">All Categories</option>
+                            <option value="workshop">Workshops</option>
+                            <option value="hackathon">Hackathons</option>
+                            <option value="seminar">Seminars</option>
+                            <option value="networking">Networking</option>
+                            <option value="social">Social Events</option>
+                            <option value="competition">Competitions</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="date-filter">Date Range:</label>
+                        <select id="date-filter" class="filter-select">
+                            <option value="all">All Dates</option>
+                            <option value="upcoming">Upcoming Events</option>
+                            <option value="past">Past Events</option>
+                            <option value="this-week">This Week</option>
+                            <option value="this-month">This Month</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="sort-filter">Sort By:</label>
+                        <select id="sort-filter" class="filter-select">
+                            <option value="date-asc">Date (Oldest First)</option>
+                            <option value="date-desc">Date (Newest First)</option>
+                            <option value="name-asc">Name A-Z</option>
+                            <option value="name-desc">Name Z-A</option>
+                            <option value="popularity">Most Popular</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="event-search" placeholder="Search events by name or description...">
+                </div>
+            </div>
+
+            <!-- Calendar View Toggle -->
+            <div class="view-toggle">
+                <button class="view-btn active" data-view="grid">
+                    <i class="fas fa-th-large"></i> Grid View
+                </button>
+                <button class="view-btn" data-view="list">
+                    <i class="fas fa-list"></i> List View
+                </button>
+                <button class="view-btn" data-view="calendar">
+                    <i class="fas fa-calendar"></i> Calendar View
+                </button>
+            </div>
+        </div>
+
+        <!-- Events Grid/List View -->
+        <div class="events-container">
+            <div class="events-grid-view active">
+                <!-- Events will be populated by JavaScript -->
+            </div>
+            
+            <div class="events-list-view">
+                <!-- List view will be populated by JavaScript -->
+            </div>
+            
+            <div class="events-calendar-view">
+                <!-- Calendar view -->
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                        <h3 id="current-month-year">February 2024</h3>
+                        <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="calendar-weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="calendar-days" id="calendar-days">
+                        <!-- Days will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="calendar-events" id="calendar-events">
+                    <!-- Events for selected date will be shown here -->
+                </div>
+            </div>
+            
+            <div class="no-events-message">
+                <i class="fas fa-calendar-times"></i>
+                <h3>No Events Found</h3>
+                <p>Try adjusting your filters or check back later for new events.</p>
+            </div>
+        </div>
+
+        <!-- Event Stats -->
+        <div class="event-stats">
+            <div class="stat-item">
+                <div class="stat-number" id="total-events">0</div>
+                <div class="stat-label">Total Events</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="upcoming-events">0</div>
+                <div class="stat-label">Upcoming</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="participants-count">0</div>
+                <div class="stat-label">Total Participants</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="completion-rate">0%</div>
+                <div class="stat-label">Completion Rate</div>
+            </div>
+        </div>
+
+        <!-- Featured Events -->
+        <div class="featured-events-section">
+            <h2 class="section-subsection">Featured Events</h2>
+            <div class="featured-events-slider">
+                <!-- Featured events will be populated by JavaScript -->
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots" id="featured-dots"></div>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="events-cta">
+            <h2>Have an Event Idea?</h2>
+            <p>Share your suggestions with us or volunteer to organize an event!</p>
+            <div class="cta-buttons">
+                <button class="btn" id="suggest-event-btn">
+                    <i class="fas fa-lightbulb"></i> Suggest an Event
+                </button>
+                <button class="btn btn-outline" id="volunteer-btn">
+                    <i class="fas fa-handshake"></i> Volunteer to Organize
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPCS | Junior Philippine Computer Society</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">JPCS</span>
+                    <span class="logo-sub">Junior Philippine Computer Society</span>
+                </div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#home" class="nav-link active" data-page="home">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="#about" class="nav-link" data-page="about">
+                    <i class="fas fa-info-circle"></i> About
+                </a>
+                <a href="#officers" class="nav-link" data-page="officers">
+                    <i class="fas fa-users"></i> Officers
+                </a>
+                <a href="#events" class="nav-link" data-page="events">
+                    <i class="fas fa-calendar-alt"></i> Events
+                </a>
+                <a href="#membership" class="nav-link" data-page="membership">
+                    <i class="fas fa-user-plus"></i> Join Us
+                </a>
+                <a href="#contact" class="nav-link" data-page="contact">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+            </div>
+            
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main id="content-container">
+        <!-- Pages will be loaded here dynamically -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-microchip"></i> JPCS</h3>
+                <p>Shaping the future of tech leaders through innovation and collaboration.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About JPCS</a></li>
+                    <li><a href="#events">Upcoming Events</a></li>
+                    <li><a href="#membership">Become a Member</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Computer Science Department</p>
+                <p><i class="fas fa-phone"></i> +63 912 345 6789</p>
+                <p><i class="fas fa-envelope"></i> contact@jpcs.org</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Junior Philippine Computer Society. All rights reserved.</p>
+            <p class="tech-text">Powered by Innovation <span class="blink">|</span></p>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay">
+        <div class="loader">
+            <div class="binary-loader">
+                <span>0</span>
+                <span>1</span>
+                <span>0</span>
+                <span>1</span>
+                <span>1</span>
+                <span>0</span>
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Global Modals Container -->
+    <div id="global-modals">
+        <!-- Toasts will be appended here -->
+    </div>
+
+    <script src="assets/js/index.js" type="module"></script>
+</body>
+</html>

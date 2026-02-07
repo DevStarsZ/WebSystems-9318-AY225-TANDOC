@@ -1,0 +1,39 @@
+{
+    "name": "Junior Philippine Computer Society",
+    "short_name": "JPCS",
+    "description": "Premier student organization for tech innovators and future leaders",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0a1a",
+    "theme_color": "#00d9ff",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "https://via.placeholder.com/192x192/00d9ff/0a0a1a?text=JPCS",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://via.placeholder.com/512x512/00d9ff/0a0a1a?text=JPCS",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["education", "technology"],
+    "shortcuts": [
+        {
+            "name": "Events",
+            "short_name": "Events",
+            "description": "Browse upcoming events",
+            "url": "/#events"
+        },
+        {
+            "name": "Join",
+            "short_name": "Join",
+            "description": "Become a member",
+            "url": "/#membership"
+        }
+    ]
+}

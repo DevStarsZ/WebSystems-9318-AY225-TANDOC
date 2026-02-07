@@ -1,0 +1,419 @@
+.about-page {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--gray);
+    margin-top: 0.5rem;
+    max-width: 600px;
+    margin: 1rem auto 0;
+    line-height: 1.6;
+}
+
+/* Mission & Vision */
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.mission-card,
+.vision-card {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.card-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 217, 255, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.mission-card h3,
+.vision-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--light);
+}
+
+.mission-card p,
+.vision-card p {
+    color: var(--gray);
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Timeline */
+.history-section {
+    margin: 6rem 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to bottom, 
+        var(--primary) 0%,
+        var(--secondary) 100%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -37px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 3px solid var(--dark);
+    box-shadow: 0 0 0 3px var(--primary),
+                0 0 20px var(--primary);
+    z-index: 1;
+}
+
+.timeline-date {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    background: rgba(0, 217, 255, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 217, 255, 0.3);
+}
+
+.timeline-content {
+    background: rgba(26, 26, 46, 0.6);
+    border: 1px solid rgba(0, 217, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+
+.timeline-content:hover {
+    border-color: var(--primary);
+    transform: translateX(10px);
+}
+
+.timeline-content h4 {
+    font-family: var(--font-heading);
+    color: var(--light);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.timeline-content p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* Values Section */
+.values-section {
+    margin: 6rem 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.value-card {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(26, 26, 46, 0.6);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 217, 255, 0.1);
+    transition: var(--transition);
+}
+
+.value-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-10px);
+    box-shadow: var(--neon-glow-secondary);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.value-card h4 {
+    font-family: var(--font-heading);
+    color: var(--light);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.value-card p {
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Achievements Slider */
+.achievements-section {
+    margin: 6rem 0;
+}
+
+.achievements-slider {
+    max-width: 800px;
+    margin: 3rem auto 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    background: rgba(26, 26, 46, 0.8);
+}
+
+.achievement-slide {
+    display: none;
+    padding: 3rem;
+    min-height: 300px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.achievement-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.achievement-content {
+    text-align: center;
+}
+
+.achievement-content h3 {
+    font-family: var(--font-heading);
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.achievement-content p {
+    color: var(--gray);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.achievement-date {
+    display: inline-block;
+    background: rgba(0, 217, 255, 0.1);
+    color: var(--primary);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: rgba(10, 10, 26, 0.5);
+    border-top: 1px solid rgba(0, 217, 255, 0.1);
+}
+
+.slider-prev,
+.slider-next {
+    background: rgba(0, 217, 255, 0.1);
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    color: var(--primary);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1.2rem;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+    background: var(--primary);
+    color: var(--dark);
+    transform: scale(1.1);
+    box-shadow: var(--neon-glow);
+}
+
+.slider-dots {
+    display: flex;
+    gap: 1rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(0, 217, 255, 0.3);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dot.active {
+    background: var(--primary);
+    transform: scale(1.2);
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.dot:hover {
+    background: var(--primary);
+    transform: scale(1.2);
+}
+
+/* CTA Section */
+.about-cta {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, 
+        rgba(0, 217, 255, 0.05) 0%,
+        rgba(123, 44, 191, 0.05) 100%);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 217, 255, 0.1);
+    margin: 4rem 0;
+}
+
+.about-cta h2 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.about-cta p {
+    color: var(--gray);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-cta .btn {
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline {
+        padding-left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline-item::before {
+        left: -27px;
+    }
+    
+    .achievement-slide {
+        padding: 2rem;
+    }
+    
+    .achievement-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline::before {
+        left: 8px;
+    }
+    
+    .timeline-item {
+        padding-left: 2rem;
+    }
+    
+    .timeline-item::before {
+        left: 0;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .slider-controls {
+        gap: 1rem;
+    }
+    
+    .slider-prev,
+    .slider-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .about-cta h2 {
+        font-size: 1.8rem;
+    }
+}

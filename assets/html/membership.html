@@ -1,0 +1,492 @@
+<section class="membership-page">
+    <div class="container">
+        <!-- Header -->
+        <div class="membership-header">
+            <h1 class="section-title">Join JPCS</h1>
+            <p class="section-subtitle">Become part of the premier tech community and unlock exclusive benefits</p>
+        </div>
+
+        <!-- Membership Tiers -->
+        <div class="membership-tiers">
+            <h2 class="section-subsection">Membership Options</h2>
+            <div class="tiers-grid">
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3>Basic Member</h3>
+                        <div class="tier-price">Free</div>
+                    </div>
+                    <div class="tier-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Access to public events</li>
+                            <li><i class="fas fa-check"></i> Weekly newsletter</li>
+                            <li><i class="fas fa-check"></i> Community Discord access</li>
+                            <li><i class="fas fa-check"></i> Basic workshop materials</li>
+                            <li><i class="fas fa-times"></i> Exclusive member events</li>
+                            <li><i class="fas fa-times"></i> Industry mentorship</li>
+                            <li><i class="fas fa-times"></i> Project funding support</li>
+                            <li><i class="fas fa-times"></i> Priority hackathon registration</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline tier-select" data-tier="basic">
+                        Select Basic
+                    </button>
+                </div>
+                
+                <div class="tier-card featured">
+                    <div class="tier-badge">Most Popular</div>
+                    <div class="tier-header">
+                        <h3>Active Member</h3>
+                        <div class="tier-price">₱500<span>/year</span></div>
+                    </div>
+                    <div class="tier-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> All Basic member benefits</li>
+                            <li><i class="fas fa-check"></i> Exclusive workshops & seminars</li>
+                            <li><i class="fas fa-check"></i> Industry mentorship program</li>
+                            <li><i class="fas fa-check"></i> Project funding opportunities</li>
+                            <li><i class="fas fa-check"></i> Priority event registration</li>
+                            <li><i class="fas fa-check"></i> Professional networking events</li>
+                            <li><i class="fas fa-check"></i> Resume & career coaching</li>
+                            <li><i class="fas fa-check"></i> Tech resource library access</li>
+                        </ul>
+                    </div>
+                    <button class="btn tier-select" data-tier="active">
+                        Select Active
+                    </button>
+                </div>
+                
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3>Lifetime Member</h3>
+                        <div class="tier-price">₱2,000</div>
+                    </div>
+                    <div class="tier-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> All Active member benefits</li>
+                            <li><i class="fas fa-check"></i> Lifetime membership status</li>
+                            <li><i class="fas fa-check"></i> Alumni network access</li>
+                            <li><i class="fas fa-check"></i> VIP event invitations</li>
+                            <li><i class="fas fa-check"></i> Speaking opportunities</li>
+                            <li><i class="fas fa-check"></i> Featured in JPCS directory</li>
+                            <li><i class="fas fa-check"></i> Mentorship recognition</li>
+                            <li><i class="fas fa-check"></i> Lifetime career support</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline tier-select" data-tier="lifetime">
+                        Select Lifetime
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="registration-form-section">
+            <h2 class="section-subsection">Registration Form</h2>
+            
+            <div class="form-progress">
+                <div class="progress-steps">
+                    <div class="step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <div class="step-label">Personal Info</div>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-number">2</div>
+                        <div class="step-label">Academic Info</div>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-number">3</div>
+                        <div class="step-label">Membership Details</div>
+                    </div>
+                    <div class="step" data-step="4">
+                        <div class="step-number">4</div>
+                        <div class="step-label">Review & Submit</div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 25%;"></div>
+                </div>
+            </div>
+
+            <form id="membership-form" novalidate>
+                <!-- Step 1: Personal Information -->
+                <div class="form-step active" data-step="1">
+                    <h3>Personal Information</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first_name" required>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last_name" required>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="birthdate">Date of Birth *</label>
+                            <input type="date" id="birthdate" name="birthdate" required>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-outline next-step" data-next="2">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Academic Information -->
+                <div class="form-step" data-step="2">
+                    <h3>Academic Information</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="student-id">Student ID *</label>
+                            <input type="text" id="student-id" name="student_id" required>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="university">University *</label>
+                            <select id="university" name="university" required>
+                                <option value="">Select University</option>
+                                <option value="University of the Philippines">University of the Philippines</option>
+                                <option value="Ateneo de Manila University">Ateneo de Manila University</option>
+                                <option value="De La Salle University">De La Salle University</option>
+                                <option value="University of Santo Tomas">University of Santo Tomas</option>
+                                <option value="Mapua University">Mapua University</option>
+                                <option value="University of San Carlos">University of San Carlos</option>
+                                <option value="Mindanao State University">Mindanao State University</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group" id="other-university-group" style="display: none;">
+                            <label for="other-university">Other University</label>
+                            <input type="text" id="other-university" name="other_university">
+                        </div>
+                        <div class="form-group">
+                            <label for="major">Major/Program *</label>
+                            <input type="text" id="major" name="major" required>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="year-level">Year Level *</label>
+                            <select id="year-level" name="year_level" required>
+                                <option value="">Select Year Level</option>
+                                <option value="freshman">Freshman</option>
+                                <option value="sophomore">Sophomore</option>
+                                <option value="junior">Junior</option>
+                                <option value="senior">Senior</option>
+                                <option value="graduate">Graduate Student</option>
+                            </select>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="expected-graduation">Expected Graduation *</label>
+                            <select id="expected-graduation" name="expected_graduation" required>
+                                <option value="">Select Year</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                            </select>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Technical Skills (Select all that apply)</label>
+                            <div class="skills-checkboxes">
+                                <label><input type="checkbox" name="skills" value="python"> Python</label>
+                                <label><input type="checkbox" name="skills" value="java"> Java</label>
+                                <label><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+                                <label><input type="checkbox" name="skills" value="cpp"> C++</label>
+                                <label><input type="checkbox" name="skills" value="csharp"> C#</label>
+                                <label><input type="checkbox" name="skills" value="php"> PHP</label>
+                                <label><input type="checkbox" name="skills" value="sql"> SQL</label>
+                                <label><input type="checkbox" name="skills" value="html-css"> HTML/CSS</label>
+                                <label><input type="checkbox" name="skills" value="react"> React</label>
+                                <label><input type="checkbox" name="skills" value="angular"> Angular</label>
+                                <label><input type="checkbox" name="skills" value="vue"> Vue.js</label>
+                                <label><input type="checkbox" name="skills" value="node"> Node.js</label>
+                                <label><input type="checkbox" name="skills" value="android"> Android Dev</label>
+                                <label><input type="checkbox" name="skills" value="ios"> iOS Dev</label>
+                                <label><input type="checkbox" name="skills" value="ai-ml"> AI/ML</label>
+                                <label><input type="checkbox" name="skills" value="cybersecurity"> Cybersecurity</label>
+                                <label><input type="checkbox" name="skills" value="cloud"> Cloud Computing</label>
+                                <label><input type="checkbox" name="skills" value="devops"> DevOps</label>
+                                <label><input type="checkbox" name="skills" value="ui-ux"> UI/UX Design</label>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="github">GitHub Profile</label>
+                            <input type="url" id="github" name="github" placeholder="https://github.com/username">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="linkedin">LinkedIn Profile</label>
+                            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username">
+                        </div>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-outline prev-step" data-prev="1">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        <button type="button" class="btn btn-outline next-step" data-next="3">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Membership Details -->
+                <div class="form-step" data-step="3">
+                    <h3>Membership Details</h3>
+                    <div class="form-grid">
+                        <div class="form-group full-width">
+                            <label for="membership-tier">Membership Tier *</label>
+                            <div class="tier-selection">
+                                <div class="tier-option">
+                                    <input type="radio" id="tier-basic" name="membership_tier" value="basic">
+                                    <label for="tier-basic">
+                                        <span class="tier-name">Basic Member</span>
+                                        <span class="tier-price">Free</span>
+                                    </label>
+                                </div>
+                                <div class="tier-option">
+                                    <input type="radio" id="tier-active" name="membership_tier" value="active" checked>
+                                    <label for="tier-active">
+                                        <span class="tier-name">Active Member</span>
+                                        <span class="tier-price">₱500/year</span>
+                                    </label>
+                                </div>
+                                <div class="tier-option">
+                                    <input type="radio" id="tier-lifetime" name="membership_tier" value="lifetime">
+                                    <label for="tier-lifetime">
+                                        <span class="tier-name">Lifetime Member</span>
+                                        <span class="tier-price">₱2,000</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="error-message"></div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label>How did you hear about JPCS? *</label>
+                            <select id="referral-source" name="referral_source" required>
+                                <option value="">Select option</option>
+                                <option value="friend">Friend/Classmate</option>
+                                <option value="professor">Professor</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="university-event">University Event</option>
+                                <option value="website">Website</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="error-message"></div>
+                        </div>
+                        
+                        <div class="form-group full-width" id="other-referral-group" style="display: none;">
+                            <label for="other-referral">Other Source</label>
+                            <input type="text" id="other-referral" name="other_referral">
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label>Interests (What would you like to get from JPCS?)</label>
+                            <div class="interests-checkboxes">
+                                <label><input type="checkbox" name="interests" value="workshops"> Technical Workshops</label>
+                                <label><input type="checkbox" name="interests" value="hackathons"> Hackathons</label>
+                                <label><input type="checkbox" name="interests" value="networking"> Networking Events</label>
+                                <label><input type="checkbox" name="interests" value="career"> Career Development</label>
+                                <label><input type="checkbox" name="interests" value="projects"> Project Collaboration</label>
+                                <label><input type="checkbox" name="interests" value="mentorship"> Mentorship</label>
+                                <label><input type="checkbox" name="interests" value="competitions"> Competitions</label>
+                                <label><input type="checkbox" name="interests" value="research"> Research Opportunities</label>
+                                <label><input type="checkbox" name="interests" value="leadership"> Leadership Development</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="previous-experience">Previous Experience in Tech Clubs/Organizations</label>
+                            <textarea id="previous-experience" name="previous_experience" rows="4" placeholder="List any previous tech club memberships, leadership roles, or relevant experience..."></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="goals">Personal Goals with JPCS</label>
+                            <textarea id="goals" name="goals" rows="4" placeholder="What do you hope to achieve by joining JPCS?"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-outline prev-step" data-prev="2">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        <button type="button" class="btn btn-outline next-step" data-next="4">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Review & Submit -->
+                <div class="form-step" data-step="4">
+                    <h3>Review Your Information</h3>
+                    <div class="review-section">
+                        <div class="review-summary">
+                            <!-- Summary will be populated by JavaScript -->
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="comments">Additional Comments</label>
+                            <textarea id="comments" name="comments" rows="3" placeholder="Any additional comments or questions..."></textarea>
+                        </div>
+                        
+                        <div class="terms-agreement">
+                            <label class="checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span>I agree to the <a href="index.html/terms" class="terms-link" data-page="terms">Terms and Conditions</a> and <a href="index.html/privacy" class="privacy-link" data-page="privacy">Privacy Policy</a> *</span>
+                            </label>
+                            <div class="error-message"></div>
+                            
+                            <label class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter" checked>
+                                <span>Subscribe to JPCS newsletter for updates and announcements</span>
+                            </label>
+                            
+                            <label class="checkbox-group">
+                                <input type="checkbox" id="communications" name="communications">
+                                <span>Allow JPCS to contact me about events and opportunities</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-outline prev-step" data-prev="3">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        <button type="submit" class="btn submit-form">
+                            <i class="fas fa-paper-plane"></i> Submit Application
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="benefits-section">
+            <h2 class="section-subsection">Member Benefits</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Skill Development</h4>
+                    <p>Access to workshops, hackathons, and training sessions to enhance your technical skills.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h4>Networking</h4>
+                    <p>Connect with industry professionals, alumni, and fellow tech enthusiasts.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h4>Career Opportunities</h4>
+                    <p>Exclusive job postings, internship opportunities, and career guidance.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Community</h4>
+                    <p>Join a supportive community of like-minded individuals passionate about technology.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>Recognition</h4>
+                    <p>Get recognized for your contributions and achievements within the community.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4>Mentorship</h4>
+                    <p>Receive guidance from experienced professionals and senior members.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2 class="section-subsection">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Who can join JPCS?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>JPCS is open to all students enrolled in computer science, information technology, information systems, and related programs. We also welcome students from other disciplines who are passionate about technology.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What are the membership fees used for?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Membership fees help fund workshops, hackathons, guest speaker events, equipment, and other resources for our members. We maintain financial transparency and provide annual reports to our members.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I upgrade my membership later?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can upgrade your membership at any time. The remaining value of your current membership will be applied towards the upgrade cost.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How long does the application process take?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Applications are typically processed within 3-5 business days. Once approved, you'll receive a welcome email with instructions on how to access member resources.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What happens after I submit my application?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You'll receive a confirmation email with your application details. Our membership committee will review your application, and you'll be notified of the status via email within 3-5 business days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

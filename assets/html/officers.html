@@ -1,0 +1,174 @@
+<section class="officers-page">
+    <div class="container">
+        <!-- Header -->
+        <div class="officers-header">
+            <h1 class="section-title">Meet Our Leadership</h1>
+            <p class="section-subtitle">Passionate students driving innovation and community growth</p>
+        </div>
+
+        <!-- Executive Board -->
+        <div class="executive-board">
+            <h2 class="section-subsection">Executive Board 2024</h2>
+            
+            <div class="executive-grid">
+                <!-- President -->
+                <div class="executive-card" data-officer-id="1">
+                    <div class="officer-image">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=President" alt="President">
+                        <div class="officer-badge">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="officer-info">
+                        <h3 class="officer-name">Maria Santos</h3>
+                        <p class="officer-position">President</p>
+                        <p class="officer-major">BS Computer Science, Senior</p>
+                        <div class="officer-social">
+                            <a href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/placeholder" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://twitter.com/placeholder" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <button class="btn btn-outline view-profile-btn">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vice President -->
+                <div class="executive-card" data-officer-id="2">
+                    <div class="officer-image">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=VicePresident" alt="Vice President">
+                        <div class="officer-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="officer-info">
+                        <h3 class="officer-name">Juan Dela Cruz</h3>
+                        <p class="officer-position">Vice President</p>
+                        <p class="officer-major">BS Information Technology, Senior</p>
+                        <div class="officer-social">
+                            <a href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/placeholder" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://twitter.com/placeholder" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <button class="btn btn-outline view-profile-btn">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Secretary -->
+                <div class="executive-card" data-officer-id="3">
+                    <div class="officer-image">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Secretary" alt="Secretary">
+                        <div class="officer-badge">
+                            <i class="fas fa-pen"></i>
+                        </div>
+                    </div>
+                    <div class="officer-info">
+                        <h3 class="officer-name">Sofia Reyes</h3>
+                        <p class="officer-position">Secretary</p>
+                        <p class="officer-major">BS Computer Science, Junior</p>
+                        <div class="officer-social">
+                            <a href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/placeholder" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://twitter.com/placeholder" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <button class="btn btn-outline view-profile-btn">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Treasurer -->
+                <div class="executive-card" data-officer-id="4">
+                    <div class="officer-image">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Treasurer" alt="Treasurer">
+                        <div class="officer-badge">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                    </div>
+                    <div class="officer-info">
+                        <h3 class="officer-name">Miguel Torres</h3>
+                        <p class="officer-position">Treasurer</p>
+                        <p class="officer-major">BS Information Systems, Senior</p>
+                        <div class="officer-social">
+                            <a href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/placeholder" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://twitter.com/placeholder" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <button class="btn btn-outline view-profile-btn">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Committees -->
+        <div class="committees-section">
+            <h2 class="section-subsection">Committee Heads</h2>
+            
+            <div class="committee-filters">
+                <button class="filter-btn active" data-committee="all">All Committees</button>
+                <button class="filter-btn" data-committee="tech">Tech & Innovation</button>
+                <button class="filter-btn" data-committee="events">Events & Logistics</button>
+                <button class="filter-btn" data-committee="membership">Membership & Outreach</button>
+                <button class="filter-btn" data-committee="marketing">Marketing & PR</button>
+            </div>
+
+            <div class="committees-grid">
+                <!-- Committee members will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Members -->
+        <div class="members-section">
+            <h2 class="section-subsection">Active Members</h2>
+            
+            <div class="members-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="member-search" placeholder="Search members by name, major, or skills...">
+                </div>
+                <div class="sort-options">
+                    <select id="member-sort">
+                        <option value="name-asc">Name A-Z</option>
+                        <option value="name-desc">Name Z-A</option>
+                        <option value="year-asc">Year Level ↑</option>
+                        <option value="year-desc">Year Level ↓</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="members-grid">
+                <!-- Members will be populated by JavaScript -->
+            </div>
+
+            <div class="members-pagination">
+                <button class="pagination-btn" id="prev-page" disabled>
+                    <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <span class="page-info">Page <span id="current-page">1</span> of <span id="total-pages">1</span></span>
+                <button class="pagination-btn" id="next-page">
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Officer Profile Modal -->
+    <div id="officer-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Officer Profile</h3>
+                <button class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Profile content will be loaded here -->
+            </div>
+        </div>
+    </div>
+</section>
