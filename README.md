@@ -24,5 +24,3 @@ A modern, futuristic website for the Junior Philippine Computer Society (JPCS) w
 4. **Events** - Event calendar, filtering, registration
 5. **Membership** - Tier selection, registration form, benefits
 6. **Contact** - Contact form, social links, FAQ, location
-
-## File Structure
